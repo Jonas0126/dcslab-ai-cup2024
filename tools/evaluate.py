@@ -38,7 +38,7 @@ def evaluate(gt_dir, ts_dir, mode, cam):
         gt_files = sorted(os.listdir(gt_dir))
         ts_files = sorted(os.listdir(ts_dir))
 
-        folder_name = ts_dir.split('/')[2]
+        folder_name = ts_dir.split('/')[-1]
 
         if not os.path.exists('ts_result/'):
             os.mkdir('ts_result/')
